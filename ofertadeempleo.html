@@ -1,0 +1,231 @@
+<?php 
+require('php/procesos.php');
+$texto=procesos::textodb();
+$listalinks=procesos::mostrarlista()
+ ?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link rel="stylesheet" href="css/puntaje.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background: #F5F5F5;">
+	<div class="container-fluid">
+				
+				<nav class="navbar navbar-exterior navbar-expand-lg navbar-dark bg-info">
+			<div class="container">
+
+				<!--- NAV BAR --->
+
+				<a href="../www/index/index.php">
+					<img src="img/ico.ico">
+				</a>
+  				<a class="navbar-brand" href="../www/index/index.php">Tecnica 7 Banfield</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+				<div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+			    	<ul class="navbar-nav ml-auto">
+			    		<li class="nav-item active">
+			        	<a class="nav-link" href="indexPAG.php">Inicio<span class="sr-only"></span></a>
+			      		</li>
+			      		
+			      		<li>
+			      			<a type="button" href="registro.html" id="botonsubircv" class="btn btn-outline-primary">Subi tu CV</a>
+			      		</li>
+			      		<li>
+			      			<a type="button" class="btn btn-dark">Empresas</a>
+			      		</li>
+			      		
+			      		
+
+			      		<!--- BARRA DE NOTIFICACIONES --->
+
+			       		<li class="nav-item dropdown">
+			                
+			                <a class="nav-link text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                <i class="icon-bell-alt"></i>
+			                </a>
+			                <ul class="dropdown-menu" style="">
+			                	<li class="head text-light bg-dark">
+			                  		<div class="row">
+			                        	<div class="col-lg-12 col-sm-12 col-12">
+			                        	<span>Notificaciones (3)</span>
+			                            <a href="" class="float-right text-light">Marcar como leído</a>
+			                          	</div>
+			                        </div> 	
+			                 	</li>
+			                    <li class="notification-box">
+			                        <div class="row">
+			                        	<div class="col-lg-3 col-sm-3 col-3 text-center">
+			                            	<img src="img/logos/generalelectric.ico" class="w-50 rounded-circle">
+			                          	</div>    
+			                          	<div class="col-lg-8 col-sm-8 col-8">
+			                            	<strong class="text-info">General Electric</strong>
+			                            	<div>
+			                             		Ha pactado una entrevista para el 22.9 a las 9:30
+			                            	</div>
+			                            	<small class="text-warning">9.7.2019, 14:07</small>
+			                          	</div>    
+			                        </div>
+			                    </li>
+			                    <li class="notification-box bg-gray">
+			                        <div class="row">
+			                          	<div class="col-lg-3 col-sm-3 col-3 text-center">
+			                            	<img src="img/logos/cocacola.ico" class="w-50 rounded-circle">
+			                          	</div>    
+				                        <div class="col-lg-8 col-sm-8 col-8">
+				                        	<strong class="text-info">Coca Cola</strong>
+				                            <div>
+				                            	Ha creado una nueva busqueda que puede interesarte
+				                            </div>
+				                            <small class="text-warning">9.7.2019, 12:50</small>
+				                        </div>    
+			                        </div>
+			                    </li>
+			                    <li class="notification-box">
+			                        <div class="row">
+			                          	<div class="col-lg-3 col-sm-3 col-3 text-center">
+			                            	<img src="img/logos/facebook.ico" class="w-50 rounded-circle">
+			                          	</div>    
+			                          	<div class="col-lg-8 col-sm-8 col-8">
+			                            	<strong class="text-info">Facebook</strong>
+			                            	<div>
+			                            		Ha cambiado la fecha de tu entrevista al 25.8 a las 8:00
+			                            	</div>
+			                            	<small class="text-warning">9.7.2019, 9:27</small>
+			                          	</div>    
+			                        </div>
+			                    </li>
+			                    <li class="footer bg-dark text-center">
+			                        <a href="" class="text-light">Ver todas</a>
+			                    </li>
+			                </ul>
+			            </li>   
+			        </ul>
+			  	</div>
+  			</div>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="row" id="maincontainer">
+			<div class="col-3">
+				<div class="card mt-3" style="padding:20px;box-shadow: 0 0 20px 0 rgba(144,144,144,.3);">
+					<div class="col-12" style="justify-content: center;">
+						<img src="img/logos/pepsi.ico" class="my-2 mx-2 logo" style="width:100%;height:100%;object-fit: cover; margin:0 !important;">
+					</div>
+					<a href="">
+						<h3>PepsiCo</h3>
+					</a>
+					<form>
+						<p class="clasificacion mb-0">
+							<input name="estrellas" id="radio1" type="radio" value="5">
+							(0.4)<label for="radio1">★</label><!--
+					    --><input name="estrellas" id="radio2" type="radio" checked="true" value="4"><!--
+					    --><label for="radio2">★</label><!--
+					    --><input name="estrellas" id="radio3" type="radio" value="3"><!--
+					    --><label for="radio3">★</label><!--
+					    --><input name="estrellas" id="radio4" type="radio" value="2"><!--
+					    --><label for="radio4">★</label><!--
+					    --><input name="estrellas" id="radio5" type="radio" value="1"><!--
+					    --><label for="radio5">★</label>
+						</p>  
+						<a href="#" data-toggle="modal" data-target="#bannerformmodal">Basados en 13 opiniones</a>
+					  	<!–– MODAL -->
+							<div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+								<div class="modal-dialog modal-sm">
+	       							<div class="modal-content">
+	        							<div class="modal-content">
+	                						<div class="modal-header">
+	                							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                							<h4 class="modal-title" id="myModalLabel">Comerntarios de PepsiCo</h4>
+	                						</div>
+	                						<div class="modal-body">
+	                     
+	                  						</div>
+								            <div class="modal-footer">
+								            </div>          
+	      								</div>
+	        						</div>
+	    						</div>
+							</div>
+					  <!–– /MODAL -->
+					</form>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="card mt-3" style=" box-shadow: 0 0 20px 0 rgba(144,144,144,.3);">
+					<div class="col-12">
+						<div class="card-body" style="padding: 5px; padding-left:20px;">
+							<div class="card-title text-center mb-4 font-weight-bold my-0">
+	               				<H3 class="mt-4">
+	             				PROGRAMADOR PHP SSR 
+	             				<span class="badge badge-danger">
+	             				NUEVO
+                  				</span>
+	                  			<H3>	                  				
+	                  		</div>
+	                  		<div class="row mb-4">
+								<div class="col-6">
+								Lugar de trabajo: <b>CABA, Buenos Aires</b><br>
+								
+								Tiempo: <b>Full-Time</b><br>
+								
+								Publicado: <b>Hace 2 dias</b><br>
+								</div>
+							</div>
+							<div class="card-text">
+								<span class="text-justify">
+									<p>
+									El área de Consultoría de PepsiCo Argentina está en la búsqueda de un perfil entusiasta que cuente con habilidades analíticas, visión de negocio y conocimientos de la industria bancaria para vincularse a proyectos de transformación de procesos e implementación de mejoras en áreas comerciales y de atención directa.
+									
+									<br class="separador mb-4">
+									El equipo requiere de un profesional graduado de  Sistemas, que posea experiencia laboral comprobable mayor a 2 años en consultoría, entidades financieras o en investigación de mercado.
+
+									<br class="separador mb-4">
+									Algunas de las tareas que de la posición serán:
+									<br class="separador mb-4">   
+									- Coordinar y ejecutar relevamientos de situación actual en cada cliente.
+									<br>
+									- Identificar oportunidades de mejora, desarrollar propuestas y presentar soluciones pertinentes.
+									<br>
+									- Procesar y analizar indicadores de eficiencia comercial, operativa y de experiencia de cliente.
+									<br>
+									- Investigar las tendencias de mercado vinculadas a entidades financieras, Fintech y digital.
+									<br>
+									- Liderar los diferentes proyectos incorporando mejores prácticas y metodologías de Consultoría.
+									<br>
+									- Participar en proyectos de Customer Experience, modelos de atención en sucursales, segmentación de clientes
+									<br class="separador mb-4">
+	 								Como integrante del equipo, podrá desarrollar y ser soporte en presentaciones comerciales en PPT, colaborar en el desarrollo de Focus Group para el arribo de situación, acompañar a otros colaboradores en su desarrollo.
+									<br class="separador mb-4">
+									Ofrecemos un entorno laboral dinámico, con acceso a proyectos de vanguardia técnica y digital, crecimiento profesional, remuneración acorde y beneficios corporativos. 
+									</p>
+								</span>
+								<div class="text-center mt-4 mb-4">
+									<a class="btn btn-block btn-primary" href="">
+										<h5>POSTULARME</h5>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="footer">
+			
+		</div>
+	</div> 
+</body>
